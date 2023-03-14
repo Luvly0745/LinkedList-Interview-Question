@@ -1,0 +1,12 @@
+
+
+def reverseList(self, head):
+        before = None
+        temp = head
+        while temp is not None:
+            after = temp.next
+            temp.next = before
+            berfore = temp
+            temp = after
+        head = before
+		return head
